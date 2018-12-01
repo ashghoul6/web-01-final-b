@@ -1,0 +1,132 @@
+  height: 15em;
+  background: brown;
+  padding-top: 3em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  width: 50em;
+}
+
+#nlink {
+  display: flex;
+  justify-content: space-around;
+  background-color: #192d3b;
+  width: 6em;
+  height: 1em;
+  padding: .2em .8em .4em .8em;
+}
+
+#search {
+  background-color: #192d3b;
+  width: 1.8em;
+  height: 1em;
+  padding: .2em 0 .4em 0;
+}
+
+#logo {
+  position: absolute;
+  left: 3%;
+  top: 6%;
+  height: 2.2em;
+  width: 3.5em;
+  background-color: gold;
+  text-align: center;
+  padding: .5em 0 .5em 0;
+}
+
+h1 {
+
+
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 150vh;
+  padding: 0 1em 0 1em;
+  margin: 1em 0 1em 0;
+}
+
+#one {
+  grid-area: 1/1/3/2;
+  background: grey;
+}
+
+#two {
+  grid-area: 1/2/2/3;
+  background: yellow;
+}
+
+#three {
+  grid-area: 1/3/2/4;
+  background: red;
+}
+
+#four {
+  grid-area: 2/2/3/3;
+  background: pink;
+}
+
+#five {
+  grid-area: 2/3/3/4;
+  background: lightblue;
+}
+
+#six {
+  grid-area: 3/3/5/4;
+  background: orange;
+}
+
+#seven {
+  grid-area: 3/1/4/2;
+  background: purple;
+}
+
+#eight {
+  grid-area: 3/2/4/3;
+  background: green;
+}
+
+#nine {
+  grid-area: 4/1/5/2;
+  background: black;
+}
+
+#ten {
+  grid-area: 4/2/5/3;
+  background: teal;
+}
+
+footer {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  height: 8em;
+  background: #192d3b;
+  padding-top: 1em;
+}
+
+a,
+h1 {
+  color: white;
+  text-align: center;
+}

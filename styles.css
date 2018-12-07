@@ -209,6 +209,18 @@ a {
 
 /*****************************************************/
 
+#content {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-gap: 1em;
+}
+
+#studentheader {
+ background-image: url('pics/naassom-azevedo-541451-unsplash.jpg');
+ background-size: cover;
+ background-position: center;
+}
+
 #s_header {
   color: #fcd247;
 }
@@ -216,36 +228,39 @@ a {
 #studentlist {
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
-  grid-gap: 10px;
-  height: 150vh;
-  padding: 0 1em 0 1em;
-  margin: 1em 0 1em 0;
+  grid-gap: 2em;
+  height: 220vh;
+  padding: 0 8em 0 1em;
+  margin: 2em 0 2em 0;
 }
 
 #s_one {
-  grid-area: 1/1/3/2;
+  grid-area: 1/1/2/3;
+  background-image: url('pics/brooke-cagle-193476-unsplash.jpg');
   background-color: #192d3b;
-  background-image: url('pics/eli-defaria-14556-unsplash.jpg');
   background-size: cover;
 }
 
 #desc1 {
-  grid-area: 3/1/4/2;
+  grid-area: 1/3/2/4;
+
 }
 
 #s_two {
-  grid-area: 1/2/3/3;
-  background-image: url('pics/eli-defaria-14556-unsplash.jpg');
+  grid-area: 2/1/3/3;
+  background-image: url('pics/eduardo-dutra-620857-unsplash.jpg');
+  background-color: #192d3b;
   background-size: cover;
 }
 
 #desc2 {
-  grid-area: 3/2/4/3;
+  grid-area: 2/3/3/4;
 }
 
 #s_three {
-  grid-area: 1/3/3/4;
-  background-image: url('pics/eli-defaria-14556-unsplash.jpg');
+  grid-area: 3/1/4/3;
+  background-image: url('pics/eunice-lituanas-242757-unsplash.jpg');
+  background-color: #192d3b;
   background-size: cover;
 }
 
@@ -254,11 +269,84 @@ a {
 }
 
 #s_four {
-  grid-area: 1/2/3/3;
-  background-image: url('pics/eli-defaria-14556-unsplash.jpg');
+  grid-area: 4/1/5/3;
+  background-image: url('pics/yingchou-han-241463-unsplash.jpg');
+  background-color: #192d3b;
   background-size: cover;
 }
 
 #desc4 {
   grid-area: 3/3/4/4;
+}
+
+#alumni {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 20px;
+  height: 75vh;
+  padding: 0 1em 0 1em;
+  margin: 1em 0 1em 0;
+}
+
+#s_list {
+  font-family: Gotham;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+#s_text {
+  font-family: Gotham;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+#s_desc {
+  font-family: Avenir;
+  font-weight: lighter;
+  text-align: left;
+  font-size: 14px;
+  line-height: 2.5;
+  color: #5c5c5c;
+}
+
+#bar {
+  background-color: #fcd247;
+  height: 10px;
+  width: 5.5em;
+  margin: 10px auto;
+}
+
+#a_1 {
+  grid-area: 1/1/3/2;
+  background-color: #192d3b;
+  background-size: cover;
+}
+
+#a_2 {
+  grid-area: 1/2/2/3;
+  background-image: url('pics/marivi-pazos-226486-unsplash.jpg');
+  background-color: #192d3b;
+  background-size: cover;
+}
+
+#a_3 {
+  grid-area: 1/3/2/4;
+  background-image: url('pics/silvia-trigo-770082-unsplash.jpg');
+  background-color: #192d3b;
+  background-size: cover;
+}
+
+#a_4 {
+  grid-area: 2/2/3/3;
+  background-image: url('pics/mathias-huysmans-786948-unsplash.jpg');
+  background-color: #192d3b;
+  background-size: cover;
+}
+
+#a_5 {
+  grid-area: 2/3/3/4;
+  background-image: url('pics/allison-griffith-537599-unsplash.jpg');
+  background-color: #192d3b;
+  background-size: cover;
 }

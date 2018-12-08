@@ -137,18 +137,21 @@ body {
   grid-area: 1/3/2/4;
   background-image: url('pics/eli-defaria-14556-unsplash.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #four {
   grid-area: 2/2/3/3;
   background-image: url('pics/eye-for-ebony-341041-unsplash.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #five {
   grid-area: 2/3/3/4;
   background-image: url('pics/norman-toth-177973-unsplash.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #six {
@@ -160,19 +163,21 @@ body {
   grid-area: 3/1/4/2;
   background-image: url('pics/sage-kirk-485982-unsplash.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #eight {
   grid-area: 3/2/4/3;
   background-image: url('pics/jonas-kakaroto-577554-unsplash(1).jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #nine {
   grid-area: 4/1/5/2;
   background-image: url('pics/kal-loftus-1169698-unsplash.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #ten {
@@ -207,13 +212,7 @@ a {
   font-family: Gotham;
 }
 
-/*****************************************************/
-
-#content {
-  display: grid;
-  grid-template: 1fr / 1fr;
-  grid-gap: 1em;
-}
+/********************Student Page*********************************/
 
 #studentheader {
  background-image: url('pics/naassom-azevedo-541451-unsplash.jpg');
@@ -221,16 +220,15 @@ a {
  background-position: center;
 }
 
-#s_header {
+.s_header {
   color: #fcd247;
 }
 
 #studentlist {
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
   grid-gap: 2em;
-  height: 220vh;
-  padding: 0 8em 0 1em;
+  padding: 0 1em 0 1em;
   margin: 2em 0 2em 0;
 }
 
@@ -239,6 +237,7 @@ a {
   background-image: url('pics/brooke-cagle-193476-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #desc1 {
@@ -251,6 +250,7 @@ a {
   background-image: url('pics/eduardo-dutra-620857-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #desc2 {
@@ -262,6 +262,7 @@ a {
   background-image: url('pics/eunice-lituanas-242757-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #desc3 {
@@ -273,15 +274,17 @@ a {
   background-image: url('pics/yingchou-han-241463-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #desc4 {
-  grid-area: 3/3/4/4;
+  grid-area: 4/3/5/4;
 }
 
 #alumni {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-area: 5/1/6/4;
   grid-gap: 20px;
   height: 75vh;
   padding: 0 1em 0 1em;
@@ -328,6 +331,7 @@ a {
   background-image: url('pics/marivi-pazos-226486-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #a_3 {
@@ -335,6 +339,7 @@ a {
   background-image: url('pics/silvia-trigo-770082-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #a_4 {
@@ -342,6 +347,7 @@ a {
   background-image: url('pics/mathias-huysmans-786948-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
 }
 
 #a_5 {
@@ -349,4 +355,268 @@ a {
   background-image: url('pics/allison-griffith-537599-unsplash.jpg');
   background-color: #192d3b;
   background-size: cover;
+  background-position: center;
+}
+
+/******************Media Queries********************/
+
+@media (max-width: 1050px) {
+  header {
+    height: 22em;
+  }
+
+  #links {
+    width: 85vw;
+  }
+
+  #nlink {
+    width: 12vw;
+  }
+
+  h1 {
+
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 805px) {
+
+  header {
+    padding: 4em 8em 0 8em;
+    height: 18em;
+  }
+
+  #links {
+    width: 30em;
+  }
+
+  #nlink {
+    width: 4em;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  #s_list {
+    font-family: Gotham;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 36px;
+  }
+
+  #s_text {
+    font-family: Gotham;
+    font-weight: lighter;
+    font-size: 24px;
+  }
+
+  #s_desc {
+    font-family: Avenir;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2.5;
+    color: #5c5c5c;
+  }
+
+  #hd {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  #blue {
+    height: 5em;
+  }
+
+  #yellow {
+    height: 5em;
+  }
+
+  #gallery {
+    display: grid;
+    height: 260vh;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0 1em 0 1em;
+    margin: 1em 0 1em 0;
+  }
+
+  #one {
+    grid-area: 1/1/2/3;
+  }
+
+  #two {
+    grid-area: 2/1/3/2;
+  }
+
+  #three {
+    grid-area: 2/2/3/3;
+  }
+
+  #four {
+    grid-area: 3/1/4/2;
+  }
+
+  #five {
+    grid-area: 3/2/4/3;
+  }
+
+  #six {
+    grid-area: 6/1/7/3;
+  }
+
+  #seven {
+    grid-area: 4/2/5/3;
+  }
+
+  #eight {
+    grid-area: 5/1/6/2;
+  }
+
+  #nine {
+    grid-area: 5/2/6/3;
+  }
+
+  #ten {
+    grid-area: 4/1/5/2;
+  }
+
+  /**********************************/
+
+  #studentlist {
+    display: grid;
+    grid-template: 1fr 21em 1fr 21em 1fr 21em 1fr 21em 1fr / 1fr 1fr 1fr;
+    grid-gap: 2em;
+  }
+
+  #s_one {
+    grid-area: 1/1/2/4;
+  }
+
+  #desc1 {
+    grid-area: 2/1/3/4;
+    max-height: 4em;
+  }
+
+  #s_two {
+    grid-area: 3/1/4/4;
+  }
+
+  #desc2 {
+    grid-area: 4/1/5/4;
+  }
+
+  #s_three {
+    grid-area: 5/1/6/4;
+  }
+
+  #desc3 {
+    grid-area: 6/1/7/4;
+  }
+
+  #s_four {
+    grid-area: 7/1/8/4;
+  }
+
+  #desc4 {
+    grid-area: 8/1/9/4;
+  }
+
+  #alumni {
+    display: grid;
+    grid-template: 15em 1fr 1fr / 1fr 1fr;
+    grid-area: 9/1/10/4;
+    grid-gap: 0;
+    height: 75vh;
+    padding: 0 1em 0 1em;
+    margin: 1em 0 1em 0;
+  }
+
+  #blue2 {
+    display: flex;
+  }
+
+  #btext {
+    display: flex;
+    height: 3em;
+    padding-top: 1em;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #bar {
+    background-color: #fcd247;
+    height: 3em;
+    width: 10px;
+    margin: 10px auto;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  #a_1 {
+    grid-area: 1/1/2/4;
+    background-color: #192d3b;
+    background-size: cover;
+  }
+
+  #a_2 {
+    grid-area: 2/1/3/2;
+  }
+
+  #a_3 {
+    grid-area: 2/2/3/3;
+  }
+
+  #a_4 {
+    grid-area: 3/1/4/2;
+  }
+
+  #a_5 {
+    grid-area: 3/2/4/3;
+  }
+}
+
+@media (max-width: 585px) {
+
+  header {
+    height: 15em;
+    padding: 4em 6em 0 6em;
+  }
+
+  #links {
+    width: 23em;
+  }
+
+  #nlink {
+    width: 6em;
+  }
+
+  #search {
+    width: 3em;
+  }
+
+  a {
+    font-size: 11px;
+  }
+
+  #hd {
+    display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  #links {
+    display: none;
+  }
+
+
 }
